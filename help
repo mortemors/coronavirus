@@ -1,0 +1,9 @@
+yarn init -y
+yarn add express
+yarn add sequelize
+
+docker para o BD
+docker run --name some-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+
+yarn add sequelize-cli -D
+yarn add pg pg-hstore
