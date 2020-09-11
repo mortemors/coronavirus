@@ -7,3 +7,8 @@ docker run --name some-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d po
 
 yarn add sequelize-cli -D
 yarn add pg pg-hstore
+
+yarn sequelize migration:create create --name=coronavirus
+yarn sequelize db:migrate
+
+yarn add cors
