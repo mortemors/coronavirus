@@ -65,7 +65,7 @@ class CountryControllers {
                 numeric:  paises[element].numeric,
                 latitude:  paises[element].latitude,
                 longitude:  paises[element].longitude,
-                coutry_ptbr:  paises[element].country_ptbr,
+                country_ptbr:  paises[element].country_ptbr,
                 cases:  paises[element].cases,
                 confirmed:  paises[element].confirmed,
                 deaths:  paises[element].deaths,

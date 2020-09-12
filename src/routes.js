@@ -1,6 +1,7 @@
 import {Router} from 'express';
 import CountrysController from './app/controllers/CountrysController';
 import CountrysSearch from './app/controllers/CountrysSearch';
+import CountrysSearchId from './app/controllers/CountrysSearchId';
 import Coronavirus from './app/models/Coronavirus'
 
 const routes = new Router();
@@ -11,5 +12,6 @@ routes.get('/', (req,res) =>{
 })
 routes.get('/update', CountrysController.store)
 routes.get('/search', CountrysSearch.store)
+routes.get('/search/:id', CountrysSearchId.store)
 
 export default routes;
