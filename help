@@ -12,3 +12,7 @@ yarn sequelize migration:create create --name=coronavirus
 yarn sequelize db:migrate
 
 yarn add cors
+
+heroku run bash --app morte-coronavirus
+yarn add sequelize-cli
+yarn sequelize db:migrate
