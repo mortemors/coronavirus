@@ -4,10 +4,11 @@ import fetch from 'node-fetch';
 class CountrySearchId {
 
   async store(req, res) {
+    
     const result = await Coronavirus.findOne(
       {
         where: {
-          country: req.params.id
+          country_ptbr: req.params.id
         }
       }
     );
