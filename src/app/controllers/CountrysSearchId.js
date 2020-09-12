@@ -7,7 +7,7 @@ class CountrySearchId {
     const result = await Coronavirus.findOne(
       {
         where: {
-          country: 'Brazil'
+          country: req.params.id
         }
       }
     );
