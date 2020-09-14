@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 class CountryControllers {
 
   async store(req, res) {
-    let url = "https://api.npoint.io/20ff7c220a67f773765b";
+    let url = "https://api.npoint.io/c5505f1a06be0713a25c";
     let settings = { method: "Get" };
     var paises = []
     fetch(url, settings)
