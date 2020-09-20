@@ -11,7 +11,7 @@ routes.get('/', (req,res) =>{
   res.send({message: 'ok'})
 })
 routes.get('/update', CountrysController.store)
-routes.get('/search', CountrysSearch.store)
-routes.get('/search/:id', CountrysSearchId.store)
+routes.get('/search', CountrysSearch.find)
+routes.get('/search/:id', CountrysSearchId.find)
 
 export default routes;

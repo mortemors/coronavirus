@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 
 class CountrySearchId {
 
-  async store(req, res) {
+  async find(req, res) {
     
     const result = await Coronavirus.findOne(
       {
