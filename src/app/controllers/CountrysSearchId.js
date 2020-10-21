@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 class CountrySearchId {
 
   async find(req, res) {
-    
+    try {
     const result = await Coronavirus.findOne(
       {
         where: {
@@ -12,7 +12,10 @@ class CountrySearchId {
         }
       }
     );
-      res.send(result)
+      res.status(200).send(result)
+    } catch (error) {
+      res.status(500).send('There has been a problem with your operation: ' + error.message);
+    }
   }
 }
 export default new CountrySearchId();
