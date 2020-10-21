@@ -26,7 +26,7 @@ class CountryControllers {
                 paises.push(json.ref_country_codes[element])
               }
             }).catch(function(error) {
-              console.log('There has been a problem with your fetch operation: ' + error.message);
+              res.status(500).send('There has been a problem with your fetch operation: ' + error.message);
             })
           )
         });
@@ -76,7 +76,7 @@ class CountryControllers {
           })
           )
           Promise.allSettled(promises2).then(
-            res.send(await Coronavirus.findAll())
+            res.status(200).send(await Coronavirus.findAll())
           )
         }
         );        
