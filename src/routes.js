@@ -8,7 +8,7 @@ const routes = new Router();
 
 
 routes.get('/', (req,res) =>{
-  res.send({message: 'ok'})
+  res.status(200).send({message: 'ok'})
 })
 routes.get('/update', CountrysController.store)
 routes.get('/search', CountrysSearch.find)
